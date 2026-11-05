@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/test.css">
-    
+    <link rel="stylesheet" href="test.css">
     <title>Boutique de plantes</title>
 </head>
 
@@ -15,18 +14,24 @@
             <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="#">Accueil</a>
+                    <a href="#top-page" data-text="Accueil">Accueil</a>
                 </li>
                 <li>
-                    nos meuilleurs ventes
+                    <a href="#best-sales" data-text="Nos meilleures ventes">Nos meilleures ventes</a>
                 </li>
                 <li>
-                    Nos plantes
+                    <a href="#plants" data-text="Nos plantes">Nos plantes</a>
                 </li>
             </ul>
             </nav>
-            <div class="burger-container">
-                <div class="burger"></div>
+            <div class="header-actions">
+                <button type="button" id="cart-btn" class="cart-btn" aria-label="Voir le panier">
+                    <span class="cart-icon">🛒</span>
+                    <span id="cart-count" class="cart-badge">0</span>
+                </button>
+                <div class="burger-container" aria-label="Menu" role="button" tabindex="0">
+                    <div class="burger"></div>
+                </div>
             </div>
         </header>
         <div class="landing">
@@ -60,28 +65,28 @@
     <section id="best-sales" class="best-sales-container">
         <h1 class="section-title">Meilleures ventes</h1>
         <div class="best-plants">
-            <a href="#" class="plant-box no-grid plant1">
+            <a href="#" class="plant-box no-grid plant1" data-id="bv-1" data-name="Monstera Deliciosa" data-price="29,99€" data-description="Une plante tropicale majestueuse aux feuilles perforées caractéristiques, facile d'entretien et très décorative.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
+                    <h1 class="plant-name">Monstera Deliciosa</h1>
                     <h3 class="plant-price">29,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box no-grid plant2">
+            <a href="#" class="plant-box no-grid plant2" data-id="bv-2" data-name="Ficus Lyrata" data-price="34,99€" data-description="Surnommé figuier lyre, il illumine vos pièces avec ses grandes feuilles texturées et son allure élégante.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Ficus Lyrata</h1>
+                    <h3 class="plant-price">34,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box no-grid plant3">
+            <a href="#" class="plant-box no-grid plant3" data-id="bv-3" data-name="Calathea Orbifolia" data-price="24,99€" data-description="Ses superbes feuilles rondes striées de vert clair apportent une touche de fraîcheur et de modernité.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Calathea Orbifolia</h1>
+                    <h3 class="plant-price">24,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box no-grid plant4">
+            <a href="#" class="plant-box no-grid plant4" data-id="bv-4" data-name="Sansevieria Trifasciata" data-price="19,99€" data-description="Plante increvable par excellence, reconnue pour ses vertus purificatrices d'air et son design graphique.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Sansevieria Trifasciata</h1>
+                    <h3 class="plant-price">19,99€</h3>
                 </div>
             </a>
         </div>
@@ -89,40 +94,40 @@
     <section id="plants" class="plants-container">
         <h1 class="section-title">Nos plantes</h1>
         <div class="grid-plants">
-            <a href="#" class="plant-box grid plant-grid1">
+            <a href="#" class="plant-box grid plant-grid1" data-id="np-1" data-name="Pilea Peperomioides" data-price="18,99€" data-description="La plante à monnaie chinoise, porte-bonheur tendance aux feuilles rondes d'un vert intense.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Pilea Peperomioides</h1>
+                    <h3 class="plant-price">18,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box grid plant-grid2">
+            <a href="#" class="plant-box grid plant-grid2" data-id="np-2" data-name="Aloe Vera" data-price="14,99€" data-description="Plante succulente aux vertus apaisantes bien connues, nécessitant très peu d'arrosage.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Aloe Vera</h1>
+                    <h3 class="plant-price">14,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box grid plant-grid3">
+            <a href="#" class="plant-box grid plant-grid3" data-id="np-3" data-name="Pothos Doré" data-price="16,99€" data-description="Plante grimpante ou tombante ultra robuste, parfaite pour habiller vos étagères avec élégance.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Pothos Doré</h1>
+                    <h3 class="plant-price">16,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box grid plant-grid4">
+            <a href="#" class="plant-box grid plant-grid4" data-id="np-4" data-name="Zamioculcas Zamiifolia" data-price="27,99€" data-description="Plante ZZ très tolérante aux pièces sombres et aux oublis d'arrosage, au feuillage lustré splendide.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Zamioculcas Zamiifolia</h1>
+                    <h3 class="plant-price">27,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box grid plant-grid5">
+            <a href="#" class="plant-box grid plant-grid5" data-id="np-5" data-name="Strelitzia Nicolai" data-price="39,99€" data-description="L'oiseau de paradis géant, apporte une touche exotique spectaculaire à votre salon.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Strelitzia Nicolai</h1>
+                    <h3 class="plant-price">39,99€</h3>
                 </div>
             </a>
-            <a href="#" class="plant-box grid plant-grid6">
+            <a href="#" class="plant-box grid plant-grid6" data-id="np-6" data-name="Pachira Aquatica" data-price="32,99€" data-description="Arbre à monnaie au tronc tressé, symbole de prospérité et d'énergie positive.">
                 <div class="plant-bio">
-                    <h1 class="plant-name">Plante</h1>
-                    <h3 class="plant-price">29,99€</h3>
+                    <h1 class="plant-name">Pachira Aquatica</h1>
+                    <h3 class="plant-price">32,99€</h3>
                 </div>
             </a>
         </div>
@@ -131,15 +136,52 @@
         <span class="copyrights">&copy; 2020 - Nature Emoi</span>
         <a href="#" class="conditions">Condition générales de vente</a>
     </footer>
-    <script>
-        const burgerContainer = document.querySelector('.burger-container');
-        const navLinks = document.querySelector('.nav-links');
 
-        burgerContainer.addEventListener('click', () => {
-            burgerContainer.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        })
-    </script>
+    <!-- Modal d'aperçu d'une plante -->
+    <div id="plant-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-card">
+            <button type="button" class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-content">
+                <h2 id="modal-title" class="modal-plant-name">Nom de la plante</h2>
+                <p id="modal-price" class="modal-plant-price">0,00€</p>
+                <p id="modal-description" class="modal-plant-desc">Description de la plante</p>
+                <div class="modal-actions">
+                    <button type="button" id="modal-add-cart" class="btn-primary">Ajouter au panier</button>
+                    <button type="button" class="btn-secondary modal-close-btn">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Panier -->
+    <div id="cart-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="cart-modal-title">
+        <div class="modal-card cart-modal-card">
+            <button type="button" class="modal-close" aria-label="Fermer le panier">&times;</button>
+            <div class="modal-content">
+                <h2 id="cart-modal-title" class="modal-plant-name">Votre Panier</h2>
+                <div id="cart-items" class="cart-items-list">
+                    <p class="cart-empty-message">Votre panier est vide.</p>
+                </div>
+                <div class="cart-summary">
+                    <span class="cart-total-label">Total :</span>
+                    <span id="cart-total-price" class="cart-total-value">0,00€</span>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" id="cart-clear-btn" class="btn-secondary">Vider le panier</button>
+                    <button type="button" id="cart-checkout-btn" class="btn-primary">Commander</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast-notification" role="status" aria-live="polite"></div>
+
+    <!-- Bouton Retour en haut -->
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Retour en haut de la page">
+        &#8593;
+    </button>
+
+    <script src="script.js" defer></script>
 </body>
-
 </html>
