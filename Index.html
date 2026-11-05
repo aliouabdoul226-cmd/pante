@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="test.css">
     
     <title>Boutique de plantes</title>
 </head>
@@ -15,13 +15,13 @@
             <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="#">Accueil</a>
+                    <a href="#top-page" data-text="Accueil">Accueil</a>
                 </li>
                 <li>
-                    nos meuilleurs ventes
+                    <a href="#best-sales" data-text="Nos meilleures ventes">Nos meilleures ventes</a>
                 </li>
                 <li>
-                    Nos plantes
+                    <a href="#plants" data-text="Nos plantes">Nos plantes</a>
                 </li>
             </ul>
             </nav>
@@ -131,15 +131,7 @@
         <span class="copyrights">&copy; 2020 - Nature Emoi</span>
         <a href="#" class="conditions">Condition générales de vente</a>
     </footer>
-    <script>
-        const burgerContainer = document.querySelector('.burger-container');
-        const navLinks = document.querySelector('.nav-links');
-
-        burgerContainer.addEventListener('click', () => {
-            burgerContainer.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        })
-    </script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
